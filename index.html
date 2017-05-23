@@ -1,1 +1,714 @@
-Hello World
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Modifications made by Eldar Khattatov, May 2017
+-->
+<html>
+	<head>
+		<title>Eldar Khattatov</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Eldar Khattatov</a></h1>
+					<p>PhD Candidate in Mathematics<br />
+					University of Pittsburgh</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<!--<li><a href="#two">Things I Can Do</a></li> -->
+						<li><a href="#two">Research</a></li>
+						<li><a href="#three">Teaching</a></li>
+						<li><a href="#four">Skills</a></li>
+						<!--<li><a href="#five">Code gallery</a></li>-->
+						<!--<li><a href="#five">Contact</a></li>-->
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/khattatov/" class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/eldarkh" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:elk58@pitt.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Hello!</h2>
+										<p>I am a PhD Candidate and Graduate Student Researcher<br />
+										at University of Pittsburgh Math Department. View my full <a href="https://drive.google.com/open?id=0B6EegwqW0Q9xbWhFX0ZiSUQxSkk">CV</a>.</p>
+									</header>
+									<p>My research interests lie in the fields of scientific computing and numerical analysis, with applications to flow in poroelastic media and linear elasticity.  
+									In particular my focus is on developing and implementing schemes and discretization techniques for mixed finite element methods, that provide more efficient 
+									and robust ways of solving problems arising in reservoir simulations and cardiovascular flow modeling.</p>
+									<h3>Education</h3>
+									<ul>
+										<li>PhD in Mathematics, University of Pittsburgh, 2018 (est.)</li>
+										<li>MSc in Applied Math and Physics, Moscow Institute of Physics and Technology, 2013</li>
+										<li>BSc in Applied Math and Physics, Moscow Institute of Physics and Technology, 2011</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Publications</h3>
+									<p>A complete list of papers and technical reports I've worked on:</p>
+									<div class="features">
+										<article>
+											<img class="image" src="images/biot.png" alt="Displacement Biot">
+											<div id="modal-1" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+													<span class="close" onclick="document.getElementById('modal-1').style.display='none'" >&times;</span>
+													<div class="container">
+													<h3>A coupled multipoint stress multipoint flux mixed finite element method for Biot poroelasticity model</h3>
+											  		<p><span class="image right"><img src="images/modals/biot_pres.png" alt="" /></span> In this work we present a mixed finite element method for five-field Biot's consolidation model that reduces to cell-centered finite differences for displacement and pressure on quadrilateral and simplicial grids. The method is guaranteed to perform robustly with discontinuous full tensor permeability coefficients and heterogeneous elasticity parameters, which is verified by the error analysis. Our approach is motivated by multipoint flux approximation (MPFA) method and multipoint stress approximation (MPSA) methods, while the approach we take is based on more recent multipoint flux mixed finite element (MFMFE) method and multipoint stress mixed finite element (MSMFE) method, for Darcy and linear elasticity models, respectively. Our scheme couples the latter two methods for the spatial discretization of the Biot's poroelasticity system, and is based on the lowest order Brezzi-Douglas-Marini mixed finite element spaces. The special quadrature rule is then employed, that allows for the local stress, rotation and velocity elimination and leads to a symmetric and positive-definite system for displacements and pressures. Theoretical and numerical studies indicate first-order accuracy in all variables in their natural norms.</p>
+
+											  		<p><a href="mailto:elk58@pitt.edu" style="cursor:pointer">[Preprint]</a></p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-1').style.display='block'" style="cursor:pointer">A coupled multipoint stress multipoint flux mixed finite element method for Biot poroelasticity model</a></strong>
+												<p>Joint work with I. Ambartsumyan and I. Yotov, prepint.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/hmfmfe.png" alt="Elements bubbles">
+											<div id="modal-2" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+													<span class="close" onclick="document.getElementById('modal-2').style.display='none'" >&times;</span>
+													<div class="container">
+													<h3>Higher order multipoint flux mixed finite element methods</h3>
+											  		<p><span class="image left"><img src="images/modals/pres.png" alt="" /></span> In this paper we develop a procedure that allows to derive an arbitrary order finite volume methods for solving elliptic problems on quadrilateral and hexahedral grids that reduces the underlying mixed finite element method to cell-centered pressure system. The construction is motivated by the multipoint flux approximation (MPFA) method and the multipoint flux mixed finite element (MFMFE) method, where the latter is based on the lowest order Brezzi-Douglas-Marini mixed finite element method. The new family of mixed finite elements is constructed, which, with a special quadrature rule being employed, allows for local velocity elimination and leads to a symmetric and positive definite cell-centered system for the pressures. Theoretical and numerical results indicate optimal $k$-th order of convergence for velocities and pressures in their natural norms. Superconvergence of order $(k+1)$ was analyzed and observed numerically for the pressures at the respective nodes.</p>
+
+											  		<p><a href="mailto:elk58@pitt.edu" style="cursor:pointer">[Preprint]</a></p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-2').style.display='block'" style="cursor:pointer">Higher order multipoint flux mixed finite element methods</a></strong>
+												<p>Joint work with I. Ambartsumyan, J. Lee and I. Yotov, prepint.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/fv.png" alt="Pulley stress">
+											<div id="modal-3" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-3').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>Mixed finite volume methods for linear elasticity</h3>
+											  		<p><span class="image left"><img src="images/modals/stress.png" alt="" /></span> We present a new mixed finite element method for linear elasticity with weakly enforced stress symmetry on simplicial grids. Motivated by the multipoint flux mixed finite element method for Darcy flow, we consider a special quadrature rule that allows for elimination of  the stress and rotation variables and leads to a cell-centered system for the displacements. Theoretical and numerical results indicate first-order convergence for all variables in the natural norms.</p>
+
+											  		<p><a href="https://drive.google.com/open?id=0B6EegwqW0Q9xWUlUNGVuME9lSVk" style="cursor:pointer">[PDF]</a></p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-3').style.display='block'" style="cursor:pointer">Mixed finite volume methods for linear elasticity</a></strong>
+												<p>Joint work with I. Ambartsumyan and I. Yotov, Finite Volumes for Complex Applications VIII, Springer Berlin Heidelberg, 2017.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/dd.png" alt="Domain decomposition stress">
+											<div id="modal-4" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-4').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>Domain decomposition and multiscale mortar mixed finite element method for linear elasticity with weak symmetry</h3>
+											  		<p><span class="image right"><img src="images/modals/displ.png" alt="" /></span> Two non-overlapping domain decomposition methods on matching multiblock grids are presented for a mixed formulation of linear elasticity problem with weakly enforced symmetry. The proposed approaches allow to solve the problem in parallel by partitioning the computational domain into multiple subdomains, upon which local problems of lower complexity are formulated. By eliminating the interior subdomain variables, the global problem is reduced to an interface problem, which is then solved by an iterative procedure. The mixed finite element method for linear elasticity with weakly imposed symmetry of stress is used to discretize each subdomain problem. The condition numbers of the resulting algebraic interface systems are analyzed.<br>
+													A mixed finite element method for the problem of interest on nonmatching multiblock grids is also considered. A mortar finite element space is introduced on the nonmatching interfaces. We approximate in this mortar space the trace of the displacement, and we impose weakly a continuity of normal stress condition. The condition number of the interface system is analyzed and optimal order convergence is shown for stress, displacement and rotation. Moreover, at cell centers, superconvergence is obtained for the displacement variable. Computational results using an efficient parallel domain decomposition algorithm are presented in confirmation of the theory of all proposed approaches.</p>
+
+											  		<p><a href="mailto:elk58@pitt.edu" style="cursor:pointer">[Preprint]</a> &nbsp; <a href="https://drive.google.com/open?id=0B6EegwqW0Q9xU3phQnpuNVh6UjA" style="cursor:pointer">[Slides]</a> </p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-4').style.display='block'" style="cursor:pointer">Domain decomposition and multiscale mortar mixed finite element method for linear elasticity with weak symmetry</a></strong>
+												<p>Joint work with I. Yotov, preprint.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/msmfe.png" alt="MSMFE">
+											<div id="modal-5" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-5').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>Multipoint stress mixed finite element method for elasticity, Parts I and II</h3>
+											  		<p><span class="image right"><img src="images/modals/displ3d.png" alt="" /></span> We develop a new mixed finite element method for linear elasticity model with weakly enforced symmetry on both simplicial and quadrilateral grids. Motivated by the multipoint flux mixed finite element method for flow in porous media, we consider a special quadrature rule that allows for elimination of stress and rotation variables and leads to a cell-centered system for the displacements. Theoretical and numerical results indicate first-order convergence for all variables in the natural norms.</p>
+
+											  		<p><a href="mailto:elk58@pitt.edu" style="cursor:pointer">[Preprint]</a> &nbsp; <a href="https://drive.google.com/open?id=0B6EegwqW0Q9xQkVpN25uODJtUlE" style="cursor:pointer">[Poster]</a></p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-5').style.display='block'" style="cursor:pointer">Multipoint stress mixed finite element method for elasticity, Parts I and II</a></strong>
+												<p>Joint work with I. Ambartsumyan, J. Nordbotten and I. Yotov, preprint.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/fractured.jpg" alt="FSI">
+											<div id="modal-6" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-6').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>A Lagrange multiplier method for a Stokes-Biot fluid-poroelastic structure interaction model</h3>
+											  		<p><span class="image right"><img src="images/modals/struct_pres_vel.png" alt="" /></span> We study a finite element computational model for solving the coupled problem arising in the interaction between a free fluid and a fluid in a poroelastic medium. The free fluid is governed by the Stokes equations, while the flow in the poroelastic medium is modeled using the Biot poroelasticity system. Equilibrium and kinematic conditions are imposed on the interface. A mixed Darcy formulation is employed, resulting in continuity of flux condition of essential type. A Lagrange multiplier method is employed to impose weakly this condition. A stability and error analysis is performed for the semi-discrete continuous-in-time and the fully discrete formulations. A series of numerical experiments is presented to confirm the theoretical convergence rates and to study the applicability of the method to modeling physical phenomena and the sensitivity of the model with respect to its parameters.</p>
+
+											  		<p><a href="https://drive.google.com/open?id=0B6EegwqW0Q9xOWhwNVcyRVlXSkE" style="cursor:pointer">[PDF]</a> &nbsp; <a href="https://drive.google.com/open?id=0B6EegwqW0Q9xX3lmN1dBNW9BV2c" style="cursor:pointer">[Poster]</a> </p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-6').style.display='block'" style="cursor:pointer">A Lagrange multiplier method for a Stokes-Biot fluid-poroelastic structure interaction model</a></strong>
+												<p>Joint work with I. Ambartsumyan, P. Zunino and I. Yotov, submitted to Numerische Mathematik, 2017.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/collocation.png" alt="3d solution">
+											<div id="modal-7" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-7').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>>Stochastic multiscale flux basis for Stokes-Darcy flows</h3>
+											  		<p><span class="image left"><img src="images/modals/stoch.jpg" alt="" /></span> We present one traditional and two multiscale flux basis implementations for coupled Stokes and Darcy flows with stochastic permeability, with its log represented as a sum of local Karhunen-Loève (KL) expansions. The problem is approximated by stochastic collocation on either a tensor product or a sparse grid, coupled with multiscale mortar mixed finite element method using non-overlapping domain decomposition for the spatial discretization. A coarse scale mortar interface problem is formulated and solved by iterative solver. In the traditional implementation, each subdomain solves local Dirichlet or Neumann problem in every interface iteration. To reduce this cost, two algorithms based on deterministic or stochastic multiscale flux basis are introduced, where the latter is formed by looping all local realizations of a subdomain’s KL region in a precomputation loop before the stochastic collocation begins. Some numerical tests are presented to illustrate the performances of these algorithms, with the stochastic multiscale flux basis showing a great advantage in computational cost among all.</p>
+
+											  		<p><a href="mailto:elk58@pitt.edu" style="cursor:pointer">[Preprint]</a> </p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-7').style.display='block'" style="cursor:pointer">Stochastic multiscale flux basis for Stokes-Darcy flows</a></strong>
+												<p>Joint work with I. Ambartsumyan, C. Wang and I. Yotov, prepint.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/fract.png" alt="FDM cover">
+											<div id="modal-8" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-8').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>Simulation of flow in fractured poroelastic fedia: A comparison of different discretization approaches</h3>
+											  		<p><span class="image left"><img src="images/modals/lesinigo.png" alt="" /></span> We study two finite element computational models for solving coupled problems involving flow in a fracture and flow in poroelastic media. The Brinkman equation is used in the fracture, while the Biot system of poroelasticity is employed in the surrounding media. Appropriate equilibrium and kinematic conditions are imposed on the interfaces. We focus on the approximation of the interface conditions, which in this context feature the interaction of different variables, such as 
+											  		velocities, displacements, stresses and pressures. The aim of this study is to compare the Lagrange multiplier and the Nitsche’s methods applied to enforce these non standard interface conditions.</p>
+
+											  		<p><a href="https://drive.google.com/open?id=0B6EegwqW0Q9xQjRDdklIMjgteEU" style="cursor:pointer">[PDF]</a> </p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-8').style.display='block'" style="cursor:pointer">Simulation of flow in fractured poroelastic fedia: A comparison of different discretization approaches</a></strong>
+												<p>Joint work with I. Ambartsumyan, P. Zunino and I. Yotov, FDM 2014: 3-14.</p>
+											</div>
+										</article>
+										<article>
+											<img class="image" src="images/therm.jpg" alt="IMA Tech report">
+											<div id="modal-9" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+											  		<span class="close" onclick="document.getElementById('modal-9').style.display='none'" >&times;</span>
+											  		<div class="container">
+													<h3>Mapping of temperatures from coarser to finer grid using temporal derivatives</h3>
+											  		<p>In many practical situations encountered in industries, there is incomplete knowledge of material properties, boundary conditions, and sources for a given material/manufacturing process. However, process monitors such as thermocouples are typically used to measure temperature evolution in certain locations to bridge the resulting gaps. Spatial gradients of temperature are needed to predict required quantities such as internal stresses developed during the process. The temperature measurements are typically performed on a coarse grid. Computation of stresses needs temperatures on a much finer grid for a more precise estimation of spatial gradients. Usually bilinear and/or weighted interpolation techniques are used to improve the spatial resolution of temperatures. However, in the cases where there are strong exothermic and/or endothermic reactions occurring during the process, such interpolation techniques are error-prone. Using more thermocouples to measure temperature on finer grid would be an easy solution. <span class="image left"><img src="images/modals/true2.png" alt="" /></span> However, such measurement is intrusive as well as perturbing in addition to increasing the cost of data acquisition. The mapping of temperatures from coarser grid to finer grid is an ill-posed problem.  In addition to the spatial distribution temperatures, the thermocouple measurements also contain valuable temporal information in the form of derivatives.  This additional information of temporal derivatives helps in improving the conditioning of the apparently ill-posed problem. The objective of this exercise is to develop an algorithm/procedure for mapping temperatures from coarse grid to a finer grid recognizing as well as the valuable temporal information in the corresponding derivatives.</p>
+
+											  		<p><a href="https://www.ima.umn.edu/2014-2015/MM8.5-14.15#schedule" style="cursor:pointer">[Results]</a> </p>
+											  		</div>
+												</div>
+											</div>
+											<div class="inner">
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-9').style.display='block'" style="cursor:pointer">Mapping of temperatures from coarser to finer grid using temporal derivatives</a></strong>
+												<p>Joint work with I. Ambartsumyan, C. He, S. Kim and L. Mrad, IMA MMI XIX workshop technical report.</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Teaching</h3>
+									<div class="features">
+										<article>
+											<h5>Analytic Geometry and Calculus 1, Recitations and Labs (Fall 2013, Fall 2014)</h5>
+											<ul>
+												<li><a href="http://calculus.math.pitt.edu/student/math0220/samplefinals/" style="cursor: pointer">Departmental course webpage</a> (sample final exams)</li>
+												<li><a href="http://www.math.pitt.edu/~athanas/MATH-0220-CALCULUS-I/" style="cursor: pointer">Professor Athanas' webpage</a> (checklist of skills, practice problems and exams with soluitions)</li>
+												<li><a href="http://www.pitt.edu/~sysoeva/math220/m220.html" style="cursor: pointer">Professor Sysoeva' webpage</a> (more practice problems and exams, LON CAPA guide)</li>
+											</ul>
+											<h5>Business Calculus, Recitations (Summer 2014, Fall 2015)</h5>
+											<ul>
+												<li><a href="http://calculus.math.pitt.edu/student/math0120/samplefinals/" style="cursor: pointer">Departmental course webpage</a> (sample final exams, checklist of skills)</li>
+												<li><a href="http://www.math.pitt.edu/~evt3/0120/" style="cursor: pointer">Professor Trofimov's webpage</a> (many practice problems, sample quizzes and exams with soluitions)</li>
+											</ul>
+											<h5>College Algebra, Recitations (Summer 2015)</h5>
+											<ul>
+												<li><a href="http://www.math.pitt.edu/~athanas/ALGEBRA/" style="cursor: pointer">Professor Athanas' webpage</a> (sample final exams and quizzes)</li>
+												<li><a href="http://www.math.pitt.edu/~evt3/0031/" style="cursor: pointer">Professor Trofimov's webpage</a> (sample exams with soluitions)</li>
+											</ul>
+										</article>
+									</div>
+								</div>
+							</section>
+
+
+
+							<section id="four">
+							<div class="container">
+								<h3>Skills</h3>
+								<div class="row">
+									<div class="6u 12u(xsmall)">
+									<ul>
+										<li>Code: C++, Python, Matlab</li>
+										<li>HPC: MPI</li>
+										<li>Scientific: FEniCS, FreeFem++, DealII</li>
+									</ul>
+									</div>
+									<div class="6u 12u(xsmall)">
+									<ul>
+										<li>Documentation: LATEX, HTML/CSS</li>
+										<li>Data: SQL</li>
+									</ul>
+									</div>
+								</div>
+							</div>
+							</section>
+
+							<!--
+							<section id="five">
+							<div class="container">
+								<h3>Code gallery</h3>
+								<p>Small projects and tutorials</p>
+									<ol>
+										<li>Parallel implementation of domain decomposition method for mixed Darcy problem using MPI, C++ with DealII.</li>
+										<li>Implementation of mixed finite element method for linear elasticity with weakly imposed symmetry on quadrilateral grids, C++ with DealII</li>
+										<li>CUDA CG solver for DealII sparse matrices.</li>
+										<li>FreeFem++ implementation of coupled Stokes-Darcy model.</li>
+										<li>FreeFem++ implementation of parabolic equation. Biot poroelasticity model.</li>
+										<li>Easy isoparametric finite element method for Poisson problem on quadrilateral grids in Python.</li>
+										<li>Some iterative solvers in Python.</li>
+									</ol>
+							</dir>
+							</section>
+							-->
+							
+
+						<!-- Five -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
+
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+	while (!deck.isInOrder()) {
+	    print 'Iteration ' + i;
+	    deck.shuffle();
+	    i++;
+	}
+
+	print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="6u 12u(xsmall)">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="6u 12u(xsmall)">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button special">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button special small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="3u 6u(medium) 12u$(xsmall)">
+												<ul class="actions vertical">
+													<li><a href="#" class="button special">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u$(medium) 12u$(xsmall)">
+												<ul class="actions vertical small">
+													<li><a href="#" class="button special small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u(medium) 12u$(xsmall)">
+												<ul class="actions vertical">
+													<li><a href="#" class="button special fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u$(medium) 12u$(xsmall)">
+												<ul class="actions vertical small">
+													<li><a href="#" class="button special small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button special">Special</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button special big">Big</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button special fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button special fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button special icon fa-download">Icon</a></li>
+											<li><a href="#" class="button icon fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button special disabled">Special</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row uniform">
+												<div class="6u 12u(xsmall)">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="6u 12u(xsmall)">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<div class="select-wrapper">
+														<select name="demo-category" id="demo-category">
+															<option value="">- Category -</option>
+															<option value="1">Manufacturing</option>
+															<option value="1">Shipping</option>
+															<option value="1">Administration</option>
+															<option value="1">Human Resources</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="6u 12u(medium)">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="6u 12u(medium)">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											</div>
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+											</div>
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section>
+						-->
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Eldar Khattatov, 2017.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+			<script>
+			// Get the modal
+			//var modal = document.getElementById('modal');
+			var modals = document.getElementsByClassName('modal');
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close");
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				for (var i=0; i<modals.length; i++){
+			    if (event.target == modals[i]) {
+			        modals[i].style.display = "none";
+			    }
+			}
+			}
+			</script>
+	</body>
+</html>
