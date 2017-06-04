@@ -1,4 +1,5 @@
 @import url("font-awesome.min.css");
+@import url("icomoon.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
@@ -13,7 +14,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
+		font-size: 110%;
 		font: inherit;
 		vertical-align: baseline;
 	}
@@ -1791,7 +1792,7 @@
 		textarea:focus {
 			border-color: #2b303a;
 		}
-
+F
 	.select-wrapper {
 		text-decoration: none;
 		display: block;
@@ -1972,7 +1973,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: FontAwesome;  /* This one is for icons */
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -1981,6 +1982,27 @@
 		.icon > .label {
 			display: none;
 		}
+
+	.icon-icomoon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon-icomoon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: icomoon/*FontAwesome*/;  /* This one is for icons */
+			font-style: normal;
+			font-size: 105%;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon-icomoon > .label {
+			display: none;
+		}		
+
 
 /* Image */
 
