@@ -152,11 +152,27 @@
 												<div class="modal-content">
 											  		<span class="close" onclick="document.getElementById('modal-4').style.display='none'" >&times;</span>
 											  		<div class="container">
-													<h3>Domain decomposition and multiscale mortar mixed finite element method for linear elasticity with weak symmetry</h3>
-											  		<p><span class="image right"><img src="images/modals/displ.png" alt="" /></span> Two non-overlapping domain decomposition methods on matching multiblock grids are presented for a mixed formulation of linear elasticity problem with weakly enforced symmetry. The proposed approaches allow to solve the problem in parallel by partitioning the computational domain into multiple subdomains, upon which local problems of lower complexity are formulated. By eliminating the interior subdomain variables, the global problem is reduced to an interface problem, which is then solved by an iterative procedure. The mixed finite element method for linear elasticity with weakly imposed symmetry of stress is used to discretize each subdomain problem. The condition numbers of the resulting algebraic interface systems are analyzed.<br>
-													A mixed finite element method for the problem of interest on nonmatching multiblock grids is also considered. A mortar finite element space is introduced on the nonmatching interfaces. We approximate in this mortar space the trace of the displacement, and we impose weakly a continuity of normal stress condition. The condition number of the interface system is analyzed and optimal order convergence is shown for stress, displacement and rotation. Moreover, at cell centers, superconvergence is obtained for the displacement variable. Computational results using an efficient parallel domain decomposition algorithm are presented in confirmation of the theory of all proposed approaches.</p>
+													<h3>Domain decomposition and multiscale mortar mixed finite element methods for linear elasticity with weak stress symmetry</h3>
+											  		<p><span class="image right"><img src="images/modals/displ.png" alt="" /></span> Two non-overlapping domain decomposition methods are presented for the
+													mixed finite element formulation of linear elasticity with weakly
+													enforced stress symmetry. The methods utilize either displacement or
+													normal stress Lagrange multiplier to impose interface continuity of
+													normal stress or displacement, respectively. By eliminating the
+													interior subdomain variables, the global problem is reduced to an
+													interface problem, which is then solved by an iterative procedure.
+													The condition number of the resulting algebraic interface problem is
+													analyzed for both methods. A multiscale mortar mixed finite element
+													method for the problem of interest on non-matching multiblock grids is
+													also studied. It uses a coarse scale mortar finite element space on
+													the non-matching interfaces to approximate the trace of the
+													displacement and impose weakly the continuity of normal stress. A
+													priori error analysis is performed. It is shown that, with appropriate
+													choice of the mortar space, optimal convergence on the fine scale is
+													obtained for the stress, displacement, and rotation, as well as some
+													superconvergence for the displacement. Computational results are
+													presented in confirmation of the theory of all proposed methods.</p>
 
-											  		<p><a href="mailto:elk58@pitt.edu" style="cursor:pointer">[Preprint]</a> &nbsp; <a href="https://drive.google.com/open?id=0B6EegwqW0Q9xU3phQnpuNVh6UjA" style="cursor:pointer">[Slides]</a> </p>
+											  		<p><a href="https://drive.google.com/open?id=1uY5NJwTOW3fYwC-K_g3J7gmnzoX0Hs4D" style="cursor:pointer">[PDF]</a> </p>
 											  		</div>
 												</div>
 											</div>
