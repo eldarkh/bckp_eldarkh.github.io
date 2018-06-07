@@ -24,6 +24,7 @@
   			ga('create', 'UA-100122700-1', 'auto');
   			ga('send', 'pageview');
 		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</head>
 	<body>
 
@@ -84,10 +85,29 @@
 							<section id="two">
 								<div class="container">
 									<h3>Publications</h3>
-									<p>A complete list of papers and technical reports I've worked on:</p>
+									<p>Complete list is below, or see my <a href="https://www.researchgate.net/profile/Eldar_Khattatov">ResearchGate</a> profile</p>
 									<div class="features">
 										<article>
-											<img class="image" src="images/biot.png" alt="Displacement Biot">
+											<!-- <img class="image" src="images/conc_250.png" alt="Flow transport"> -->
+											<div id="modal-0" class="modal">
+											<!-- Modal content -->
+												<div class="modal-content">
+													<span class="close" onclick="document.getElementById('modal-0').style.display='none'" >&times;</span>
+													<div class="container">
+													<h3>Flow and transport in fractured poroelastic media</h3>
+											  		<p><span class="image right"><img src="images/modals/conc_250.png" alt="" /></span> We study flow and transport in fractured poroelastic media using Stokes flow in the fractures and the Biot model in the porous media. The Stokes-Biot model is coupled with an advection-diffusion equation for modeling transport of chemical species within the fluid. The continuity of flux on the fracture-matrix interfaces is imposed via a Lagrange multiplier. The coupled system is discretized by a finite element method using Stokes elements, mixed Darcy elements, conforming displacement elements, and discontinuous Galerkin for transport. The stability and convergence of the coupled scheme are analyzed. Computational results verifying the theory as well as simulations of flow and transport in fractured poroelastic media are presented.</p>
+
+											  		<p><a href="https://www.researchgate.net/publication/324483198_Flow_and_transport_in_fractured_poroelastic_media" style="cursor:pointer">[PDF]</a></p>
+											  		</div>
+												</div>
+											</div>
+											<!-- <div class="inner"> -->
+												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-0').style.display='block'" style="cursor:pointer">Flow and transport in fractured poroelastic media</a></strong>
+												<p>Joint work with I. Ambartsumyan, T. Nguyen and I. Yotov, submitted to GEM International Journal on Geomathematics, 2018.</p>
+											<!-- </div> -->
+										</article>
+										<article>
+											<!-- <img class="image" src="images/biot.png" alt="Displacement Biot"> -->
 											<div id="modal-1" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -100,13 +120,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-1').style.display='block'" style="cursor:pointer">A coupled multipoint stress multipoint flux mixed finite element method for Biot poroelasticity model</a></strong>
 												<p>Joint work with I. Ambartsumyan and I. Yotov, prepint.</p>
-											</div>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/hmfmfe.png" alt="Elements bubbles">
+											<!-- <img class="image" src="images/hmfmfe.png" alt="Elements bubbles"> -->
 											<div id="modal-2" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -119,13 +139,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-2').style.display='block'" style="cursor:pointer">Higher order multipoint flux mixed finite element methods</a></strong>
-												<p>Joint work with I. Ambartsumyan, J. Lee and I. Yotov, submitted to Mathematics of Computation, 2017.</p>
-											</div>
+												<p>Joint work with I. Ambartsumyan, J. Lee and I. Yotov, submitted to M3AS, 2018.</p>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/fv.png" alt="Pulley stress">
+											<!-- <img class="image" src="images/fv.png" alt="Pulley stress"> -->
 											<div id="modal-3" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -138,13 +158,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-3').style.display='block'" style="cursor:pointer">Mixed finite volume methods for linear elasticity</a></strong>
 												<p>Joint work with I. Ambartsumyan and I. Yotov, Finite Volumes for Complex Applications VIII, Springer Berlin Heidelberg, 2017.</p>
-											</div>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/dd.png" alt="Domain decomposition stress">
+											<!-- <img class="image" src="images/dd.png" alt="Domain decomposition stress"> -->
 											<div id="modal-4" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -174,13 +194,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-4').style.display='block'" style="cursor:pointer">Domain decomposition and multiscale mortar mixed finite element method for linear elasticity with weak symmetry</a></strong>
-												<p>Joint work with I. Yotov, submitted to SIAM Journal on Scientific Computing, 2017.</p>
-											</div>
+												<p>Joint work with I. Yotov, submitted to M2AN, 2018.</p>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/msmfe.png" alt="MSMFE">
+											<!-- <img class="image" src="images/msmfe.png" alt="MSMFE"> -->
 											<div id="modal-5" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -193,13 +213,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-5').style.display='block'" style="cursor:pointer">Multipoint stress mixed finite element method for elasticity, Parts I and II</a></strong>
 												<p>Joint work with I. Ambartsumyan, J. Nordbotten and I. Yotov, preprint.</p>
-											</div>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/fractured.jpg" alt="FSI">
+											<!-- <img class="image" src="images/fractured.jpg" alt="FSI"> -->
 											<div id="modal-6" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -212,13 +232,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-6').style.display='block'" style="cursor:pointer">A Lagrange multiplier method for a Stokes-Biot fluid-poroelastic structure interaction model</a></strong>
-												<p>Joint work with I. Ambartsumyan, P. Zunino and I. Yotov, submitted to Numerische Mathematik, 2017.</p>
-											</div>
+												<p>Joint work with I. Ambartsumyan, P. Zunino and I. Yotov, Numerische Mathematik, Vol.139, Issue 1, 2018.</p>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/collocation.png" alt="3d solution">
+											<!-- <img class="image" src="images/collocation.png" alt="3d solution"> -->
 											<div id="modal-7" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -231,13 +251,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-7').style.display='block'" style="cursor:pointer">Stochastic multiscale flux basis for Stokes-Darcy flows</a></strong>
 												<p>Joint work with I. Ambartsumyan, C. Wang and I. Yotov, prepint.</p>
-											</div>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/fract.png" alt="FDM cover">
+											<!-- <img class="image" src="images/fract.png" alt="FDM cover"> -->
 											<div id="modal-8" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -251,13 +271,13 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-8').style.display='block'" style="cursor:pointer">Simulation of flow in fractured poroelastic fedia: A comparison of different discretization approaches</a></strong>
 												<p>Joint work with I. Ambartsumyan, P. Zunino and I. Yotov, FDM 2014: 3-14.</p>
-											</div>
+											<!-- </div> -->
 										</article>
 										<article>
-											<img class="image" src="images/therm.jpg" alt="IMA Tech report">
+											<!-- <img class="image" src="images/therm.jpg" alt="IMA Tech report"> -->
 											<div id="modal-9" class="modal">
 											<!-- Modal content -->
 												<div class="modal-content">
@@ -270,10 +290,10 @@
 											  		</div>
 												</div>
 											</div>
-											<div class="inner">
+											<!-- <div class="inner"> -->
 												<strong style="font-size: 1.25em" style="font-weight: 700"><a onclick="document.getElementById('modal-9').style.display='block'" style="cursor:pointer">Mapping of temperatures from coarser to finer grid using temporal derivatives</a></strong>
 												<p>Joint work with I. Ambartsumyan, C. He, S. Kim and L. Mrad, IMA MMI XIX workshop technical report.</p>
-											</div>
+											<!-- </div> -->
 										</article>
 									</div>
 
@@ -326,8 +346,8 @@
 									<div class="6u 12u(xsmall)">
 									<ul>
 										<li>Code: C++, Python, Matlab, R</li>
-										<li>HPC: MPI, OpenMP</li>
-										<li>Scientific: Deal.II, FEniCS, FreeFem++</li>
+										<li>HPC: MPI, OpenMP, PETSc</li>
+										<li>Scientific: deal.II, FEniCS, FreeFem++</li>
 									</ul>
 									</div>
 									<div class="6u 12u(xsmall)">
